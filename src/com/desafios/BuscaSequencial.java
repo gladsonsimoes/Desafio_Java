@@ -37,14 +37,12 @@ public class BuscaSequencial {
             boolean numeroIgualDoArray = numeroParaEncontrarDentroDoArray == elementos[i];
             if (numeroIgualDoArray){
                 System.out.println("Achei " + numeroParaEncontrarDentroDoArray + " na posição " + i );
+                break;
             } else {
-                System.out.println("Numero " + numeroParaEncontrarDentroDoArray + " nao encontrado!");
+                System.out.println("Não encontrei > - > ");
                 break;
             }
-
         }
-
-
 
         //TODO: Retorne o valor do elemento no Array junto de sua respectiva posição.
 
