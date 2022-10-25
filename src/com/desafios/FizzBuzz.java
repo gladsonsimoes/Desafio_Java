@@ -1,4 +1,3 @@
-/*
 package com.desafios;
 
 import java.util.*;
@@ -22,4 +21,4 @@ public class FizzBuzz {
             System.out.println(num);
         }
     }
-}*/
+}
