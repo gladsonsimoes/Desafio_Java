@@ -24,27 +24,28 @@ e a busca será concluída com sucesso.
            conforme exemplos abaixo.
 */
 
-import java.util.*;
+import java.util.Scanner;
 
-public class BuscaSequencial {
+ public class BuscaSequencial {
     public static void main(String[] args) {
-
         Scanner leitor = new Scanner(System.in);
         int numeroParaEncontrarDentroDoArray = leitor.nextInt();
-        int[] elementos = {64, 137, -16, 43, 67, 81, -90, 212, 10, 75};
+        int[] elementos = {64 , 137 , -16 , 43 , 67 , 81 , -90 , 212, 10 , 75};
 
         for(int i = 0; i < elementos.length; i++) {
-            boolean numeroIgualDoArray = numeroParaEncontrarDentroDoArray == elementos[i];
+        boolean numeroIgualDoArray = elementos[i] == numeroParaEncontrarDentroDoArray;
+         boolean numeroDiferenteDoArray = i == elementos.length-1;
+        /* boolean numeroDiferenteDoArray = elementos[i] != numeroParaEncontrarDentroDoArray; --> Deu ruim */
+
             if (numeroIgualDoArray){
-                System.out.println("Achei " + numeroParaEncontrarDentroDoArray + " na posição " + i );
+                System.out.println("Achei " + numeroParaEncontrarDentroDoArray + " na posicao " + i );
                 break;
-            } else {
-                System.out.println("Não encontrei > - > ");
+            } else if (numeroDiferenteDoArray){
+                System.out.println("Numero " + numeroParaEncontrarDentroDoArray + " nao encontrado!");
                 break;
             }
         }
-
-        //TODO: Retorne o valor do elemento no Array junto de sua respectiva posição.
-
     }
-}
+ }
+
+//TODO: Retorne o valor do elemento no Array junto de sua respectiva posição.
