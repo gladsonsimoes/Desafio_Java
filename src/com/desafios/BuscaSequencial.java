@@ -34,7 +34,7 @@ import java.util.Scanner;
 
         for(int i = 0; i < elementos.length; i++) {
         boolean numeroIgualDoArray = elementos[i] == numeroParaEncontrarDentroDoArray;
-         boolean numeroDiferenteDoArray = i == elementos.length-1;
+        boolean numeroDiferenteDoArray = i == elementos.length-1;
         /* boolean numeroDiferenteDoArray = elementos[i] != numeroParaEncontrarDentroDoArray; --> Deu ruim */
 
             if (numeroIgualDoArray){
