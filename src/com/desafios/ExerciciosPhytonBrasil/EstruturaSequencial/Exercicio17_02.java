@@ -1,4 +1,4 @@
-package com.company;
+package com.desafios.ExerciciosPhytonBrasil.EstruturaSequencial;
 import java.util.Scanner;
 public class Exercicio17_02 {
     static double litrosDoGalao = 3.6; static double litrosDeCadaLata = 18;
@@ -11,7 +11,7 @@ public class Exercicio17_02 {
             double lataPossiveis = (litrosNecessarios / litrosDeCadaLata);
             double galoesPossiveis = (litrosNecessarios / litrosDoGalao);
             double latasPossiveisParaMenorCusto = lataPossiveis;
-            System.out.printf("\nAGORA VOCÊ FARÁ UMA OPERAÇÃO ARREDONDANDO VALORES, PRESTE MUITA ATENÇÃO!!! \n -----------------CASO O NÚMERO SEJA INTEIRO, SÓ O REPITA-----------------\n");
+            System.out.print("\nAGORA VOCÊ FARÁ UMA OPERAÇÃO ARREDONDANDO VALORES, PRESTE MUITA ATENÇÃO!!! \n -----------------CASO O NÚMERO SEJA INTEIRO, SÓ O REPITA-----------------\n");
             System.out.println("\nQuantidade: " + lataPossiveis);
             System.out.print("Arredonde quantidade para CIMA[ex.: 1.34 = 2]: ");
             lataPossiveis = scanner.nextDouble();
